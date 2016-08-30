@@ -1,4 +1,4 @@
-FROM java:8u92-jre-alpine
+FROM openjdk:7
 
 EXPOSE 8080 9001 9002
 
