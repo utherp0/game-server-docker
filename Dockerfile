@@ -1,4 +1,4 @@
-FROM rhel7:latest
+FROM rhel7.2
 
 EXPOSE 8080 9001 9002
 
