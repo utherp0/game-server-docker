@@ -1,4 +1,4 @@
-FROM centos:centos7
+FROM webserver30-tomcat7-openshift
 
 EXPOSE 8080 9001 9002
 
