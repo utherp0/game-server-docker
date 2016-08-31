@@ -9,6 +9,6 @@ RUN chmod 770 /usr/verticles/game-service.jar
 
 WORKDIR /usr/verticles
 
-ENTRYPOINT["sh","-c"]
+ENTRYPOINT ["sh","-c"]
 
-CMD["java -jar game-service.jar -cluster"]
+CMD ["java -jar game-service.jar -cluster"]
