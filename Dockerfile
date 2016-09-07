@@ -2,7 +2,7 @@ FROM registry.access.redhat.com/rhel7.2
 
 EXPOSE 8080 9001 9002
 
-USER 1000
+USER root
 RUN yum install -y java-1.8.0-openjdk-headless
 RUN mkdir /usr/verticles
 RUN mkdir /usr/verticles/.vertx
