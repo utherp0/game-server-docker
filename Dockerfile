@@ -3,7 +3,7 @@ FROM registry.access.redhat.com/rhel7.2
 EXPOSE 8080 9001 9002
 
 USER root
-RUN yum install -y java-1.8.0-openjdk-headless
+RUN yum install -y java-1.8.0-openjdk-headless --disablerepo=rhel-7-server-tus-rpms --enablerepo=rhel-7-server-rpms
 RUN mkdir /usr/verticles
 RUN mkdir /usr/verticles/.vertx
 ADD https://github.com/utherp0/oseTestWARs/blob/master/game-service-1.0.0-SNAPSHOT-fat.jar?raw=true /usr/verticles/game-service.jar
