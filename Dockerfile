@@ -1,6 +1,6 @@
 FROM registry.access.redhat.com/rhel7.2
 
-EXPOSE 8080 9001 9002
+EXPOSE 9001
 
 USER root
 RUN yum install -y java-1.8.0-openjdk-headless
